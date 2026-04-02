@@ -1,0 +1,37 @@
+🐳 Docker কী? (Introduction to Docker)
+
+Docker হলো একটি containerization platform, 
+যা দিয়ে তুমি সহজে application তৈরি, deploy এবং run করতে পারো—একই environment-এ, যেকোনো মেশিনে।
+
+সহজভাবে বললে:
+👉 “Docker এমন একটা system, যেখানে তোমার app + dependencies একসাথে package হয়ে container হিসেবে run হয়”
+
+🔥 কেন Docker দরকার?
+
+আগে কী হতো?
+
+Developer এর machine এ app ঠিকমতো চলতো
+কিন্তু production/server এ গিয়ে error 😑
+👉 কারণ: environment mismatch
+
+💡 Docker এই সমস্যার সমাধান করে:
+
+Same environment everywhere
+No “it works on my machine” problem ❌
+📦 Container কী?
+
+Container হলো lightweight virtual environment
+
+👉 এতে থাকে:
+
+Application code
+Runtime (Node, Go, Python etc.)
+Libraries & dependencies
+Configurations
+
+🧠 Example:
+তুমি যদি Node.js app বানাও, container এর ভিতরে থাকবে:
+
+Node.js
+npm packages
+তোমার code
