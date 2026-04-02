@@ -1,0 +1,103 @@
+🧠 Kernel (কার্নেল) কী? — সহজভাবে বুঝি
+
+Kernel (কার্নেল) হলো একটি Operating System (OS)-এর সবচেয়ে গুরুত্বপূর্ণ অংশ, 
+যা hardware (CPU, RAM, Disk) এবং software (তোমার program) এর মধ্যে bridge হিসেবে 
+কাজ করে।
+
+👉 সহজভাবে:
+“Kernel হলো OS-এর brain, যেটা সবকিছু control করে”
+
+🧩 একটা সহজ উদাহরণ
+
+ধরো তুমি একটি app চালাচ্ছো:
+
+App → কিছু কাজ করতে চায় (যেমন: file read, memory use)
+Hardware → সরাসরি app-এর সাথে কথা বলতে পারে না
+
+👉 তখন Kernel:
+
+App-এর request নেয়
+Hardware-এর সাথে communicate করে
+Result app-কে দেয়
+🏗 Kernel এর মূল কাজগুলো :-
+
+1. ⚙️ Process Management
+কোন program কখন run করবে
+CPU কে কে use করবে
+👉 multitasking handle করে
+
+2. 💾 Memory Management
+RAM কে manage করে
+কোন app কত memory পাবে
+
+3. 📂 File System Management
+File read/write control করে
+Disk access manage করে
+
+4. 🔌 Device Management
+Keyboard, Mouse, Printer control করে
+Driver এর মাধ্যমে hardware handle করে
+
+5. 🔒 Security & Access Control
+কে কোন resource access করতে পারবে তা ঠিক করে
+
+🧠 Kernel কিভাবে কাজ করে?
+
+👉 Flow:
+Application → System Call → Kernel → Hardware
+
+Step:
+App request দেয় (file open করতে)
+Kernel system call receive করে
+Hardware-এ instruction দেয়
+Result app-এ ফেরত দেয়
+
+🆚 Kernel vs Operating System
+বিষয় -	Kernel -	Operating System
+কী -	Core part	- পুরো system
+কাজ -	Hardware control -	User interface + tools
+Example -	Linux Kernel	-Ubuntu, Windows
+
+👉 OS = Kernel + UI + Software tools
+
+🐧 Linux Kernel
+
+👉 Docker mainly use করে Linux Kernel
+
+কারণ: 
+
+Lightweight
+Powerful process control
+Namespace & cgroups support
+🔥 Docker এর সাথে Kernel এর সম্পর্ক
+
+👉 Docker container actually VM না
+👉 এটা OS-level virtualization
+
+📌 Meaning:
+
+সব container একই Kernel share করে
+কিন্তু আলাদা environment পায়
+
+👉 এজন্য Docker fast ⚡
+
+🎯 Real Example
+
+তুমি যখন:
+
+node app.js
+
+👉 তখন:
+
+Kernel CPU allocate করে
+Memory দেয়
+File access manage করে
+
+সব কিছু Kernel handle করে
+
+🧠 Summary
+
+👉 Kernel = OS-এর heart ❤️
+👉 Hardware + Software এর মাঝে bridge
+👉 Process, Memory, Device সব control করে
+👉 Docker container একই kernel share করে
