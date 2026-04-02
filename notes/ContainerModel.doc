@@ -1,0 +1,14 @@
+📦 Container Model কী? 
+
+Container Model হলো এমন একটি system বা architecture যেখানে application এবং 
+তার সব dependencies (library, runtime, config) একসাথে isolated environment-এ 
+run হয় — যাকে আমরা container বলি।
+
+👉 সহজভাবে:
+“Container Model মানে হচ্ছে app + environment = একসাথে প্যাকেজ করে চালানো”
+
+Container usually packages that contain ->
+Application code,
+app dependencies,
+runtime,
+startup command
